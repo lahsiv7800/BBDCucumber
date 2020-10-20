@@ -1,0 +1,8 @@
+package testRunner;
+
+import io.cucumber.junit.CucumberOptions;
+
+@CucumberOptions()
+public class TestRunner {
+
+}
