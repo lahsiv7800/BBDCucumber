@@ -1,0 +1,27 @@
+package coding_Practice;
+import java.util.HashMap;
+import java.util.Map;
+
+public class WordOccurence {
+	
+	public Map<String,Integer> wordOccurence(String word,String Occurence) {
+	String[] wordOccurence = word.split(" ");
+	int size = wordOccurence.length;
+	Map<String,Integer> count = new HashMap<>();
+	int charCount=0;
+	
+	for(int i=0;i<size;i++) {
+		if(wordOccurence[i].equals(Occurence)) {
+			count.put(wordOccurence[i],charCount++);
+		}
+	}
+	return count;
+	}
+	
+	public static void main(String[] args) {
+		WordOccurence obj = new WordOccurence();
+		Map<String,Integer> rslt = new HashMap<String,Integer>();
+		rslt = obj.wordOccurence("geeks for geeks","geeks");
+		System.out.println(rslt);
+	}
+}

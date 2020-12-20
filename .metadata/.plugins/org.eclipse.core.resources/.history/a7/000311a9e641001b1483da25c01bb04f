@@ -1,0 +1,19 @@
+package selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class JavaScriptExecutor {
+	static WebDriver driver;
+	
+	public static void main(String[] args) {
+		String Path = System.getProperty("user.dir");
+		final int THRESHOLD;
+		String driverPath = Path + "\\Drivers\\Chrome\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", driverPath);
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to("http://demo.guru99.com/test/simple_context_menu.html");
+	}
+	
+}

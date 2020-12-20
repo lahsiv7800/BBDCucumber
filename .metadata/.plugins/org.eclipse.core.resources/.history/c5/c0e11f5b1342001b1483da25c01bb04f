@@ -1,0 +1,24 @@
+package coding_Practice;
+import java.util.HashMap;
+import java.util.Map;
+
+public class WordOccurence {
+	
+	public Map<String,Integer> wordOccurence(String word,String Occurence) {
+	String[] wordOccurence = word.split(" ");
+	int size = wordOccurence.length;
+	Map<String,Integer> count = new HashMap<>();
+	
+	for(int i=0;i<size;i++) {
+		if(wordOccurence[i].equals(Occurence)) {
+			count.put(wordOccurence[i], i);
+		}
+	}
+	return count;
+	}
+	
+	public static void main(String[] args) {
+		WordOccurence obj = new WordOccurence();
+		obj.wordOccurence("geeks for geeks","geeks");
+	}
+}
