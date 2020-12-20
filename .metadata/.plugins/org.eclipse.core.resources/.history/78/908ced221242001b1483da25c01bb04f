@@ -1,0 +1,7 @@
+package coding_Practice;
+
+public class WordOccurence {
+	
+	public boolean wordOccurence(String word,String Occurence) {
+	String[] wordOccurence = word.split(" ");
+}

@@ -1,0 +1,27 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class JavaScriptExecutor {
+	
+		
+		//Opening Alert for web
+//		js.executeScript(" alert('This is Guru99 webapage'); ");
+		
+		//Opening Prompt using JavaScriptExecutor
+//		js.executeScript(" prompt('This is manual prompt') ");
+		
+		//Click on CheckBox using JavaScript Executor
+		WebElement remember_Button = driver.findElement(By.xpath("//input[@id='RememberMe']"));
+		js.executeScript("arguments[0].click()", remember_Button);
+		
+		//Scroll Operation in JavaScript Executor
+		
+		driver.quit();
+	}
+	
+}

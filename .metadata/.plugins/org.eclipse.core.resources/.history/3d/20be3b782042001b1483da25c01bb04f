@@ -1,0 +1,9 @@
+package arrays;
+
+public class lengthOfString {
+	
+	public int stringLength(String str) {
+	int lastIndex=	str.lastIndexOf(str, 0);
+	}
+
+}

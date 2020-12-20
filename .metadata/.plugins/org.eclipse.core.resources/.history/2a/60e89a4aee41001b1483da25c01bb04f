@@ -1,0 +1,9 @@
+package seleniumJavaScriptExecutor;
+
+public class ScrollDownUsingJavaScript {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

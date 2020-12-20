@@ -1,0 +1,7 @@
+package seleniumJavaScriptExecutor;
+
+public class JavaScriptExecutor2 {
+	
+	public static void main(String[] args) {
+
+}

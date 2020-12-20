@@ -1,0 +1,28 @@
+package seleniumJavaScriptExecutor;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ScrollDownUsingJavaScript {
+	static WebDriver driver;
+	public static void main(String[] args) {
+		String Path = System.getProperty("user.dir");
+		String driverPath = Path + "\\Drivers\\Chrome\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", driverPath);
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to("http://demowebshop.tricentis.com/login");
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		//js.executeScript(" window.location='http://www.gmail.com/' ");
+		
+		//Using Scrollto method
+		js.executeScript("window.scrollBy(0,1000) ");
+		
+		//Scrolling till the bottom of the page
+		
+		js.executeScript("window.scrollto(0,document.body.scrollHeight)");
+	}
+	
+
+}
